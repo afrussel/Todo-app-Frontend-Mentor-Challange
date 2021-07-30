@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/img/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Todo app</title>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <header class="background"></header>
+    <main class="main">
+      <header class="main__header">
+        <h1 class="main__title">TODO</h1>
+        <input type="checkbox" id="switch-check" class="main__switch" />
+        <label
+          for="switch-check"
+          id="switch"
+          class="main__switch-label"
+        ></label>
+      </header>
+      <form id="form" class="todo">
+        <div class="todo__box">
+          <div class="todo__circle"></div>
+          <label for="text-todo" class="todo__placeholder"
+            >Create a new todo...</label
+          >
+          <input type="text" id="text-todo" class="todo__input" />
+        </div>
+      </form>
+
+      <ul class="list" id="list">
+        <li class="list__item">
+          <p class="list__text">0 items left</p>
+          <p class="list__text" id="clear-button" role="button">
+            Clear completed
+          </p>
+        </li>
+      </ul>
+
+      <div class="options" id="options">
+        <button
+          type="button"
+          value="all"
+          class="options__button options__button--active"
+        >
+          all
+        </button>
+        <button type="button" value="active" class="options__button">
+          active
+        </button>
+        <button type="button" value="completed" class="options__button">
+          completed
+        </button>
+      </div>
+      <p class="main__text">Drag and drop to reorder text</p>
+    </main>
+
+    <script src="js/theme-switch.js"></script>
+  </body>
+</html>
